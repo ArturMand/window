@@ -1,6 +1,6 @@
 {
   "name": "window",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "",
   "homepage": "https://arturmand.github.io/window/",
   "scripts": {
@@ -9,13 +9,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/arturmand/window.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "Artur Mandryk <arturmandryk@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://github.com/arturmand/window/issues"
   },
   "dependencies": {
     "modern-normalize": "^1.1.0"

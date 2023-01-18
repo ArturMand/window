@@ -1,2 +1,9 @@
 @import './common';
-@import './example';
+@import './utils/var';
+@import './section/header/header';
+@import './section/hero/hero';
+@import './section/about/about';
+@import './section/benefits/benefits';
+@import './section/services/services';
+@import './section/gallery/gallery';
+@import './section/footer/footer';
