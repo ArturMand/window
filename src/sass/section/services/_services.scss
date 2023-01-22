@@ -1,0 +1,100 @@
+.services {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width:767px) {
+      gap: 20px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media screen and(min-width:768px) and (max-width:1199px) {
+      gap: 32px 40px;
+      flex-wrap: wrap;
+    }
+    @media screen and(min-width:1200px)  {
+      gap: 40px 20px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 25px 47px;
+    width: 302px;
+    height: 478px;
+    background-color: $primary-bgc;
+    border-radius: 20px;
+    @media screen and(min-width:768px) and (max-width:1199px) {
+      height: 522px;
+      &:last-child{
+        padding-bottom: 24px;
+      }
+    }
+    @media screen and(max-width:767px) {
+        padding-bottom: 24px;
+    }
+    @media screen and(min-width:1200px) {
+      padding: 60px 19px;
+      flex-basis: 575px;
+      height: 100%;
+    }
+
+  }
+  &__wrapper {
+    display: flex;
+    flex: 1 1 auto;
+    @media screen and(max-width:1199px) {
+      flex-direction: column;
+      align-items: center;
+  }
+    @media screen and(min-width:1200px) {
+      margin-bottom: 32px;
+    }
+  }
+  &__img {
+    width: 252px;
+    height: 166px;
+    @media screen and (max-width:1199px) {
+      margin-bottom: 12px;
+    }
+    @media screen and(min-width:1200px) {
+      width: 259px;
+      height: 344px;
+    }
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and(min-width:1200px) {
+      margin-left: 20px;
+    }
+  }
+  &__title {
+    text-align: center;
+
+    @media screen and(max-width:767px) {
+      max-width: 230px;
+    }
+    @media screen and (max-width:1199px) {
+      margin-bottom: 12px;
+    }
+  }
+  &__descr {
+    @extend %font-services;
+ 
+  }
+  &__price {
+    @extend %font-subTitle;
+    color: $primary-text-color;
+    text-align: center;
+  }
+  &__price--blue {
+    color: $second-text-color;
+  }
+}
