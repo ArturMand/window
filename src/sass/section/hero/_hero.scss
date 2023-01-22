@@ -1,0 +1,15 @@
+.title {
+  @extend %font-title;
+}
+
+.hero {
+      max-width: 1200px;
+  max-height: 925px;
+  margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
