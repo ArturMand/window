@@ -1,0 +1,78 @@
+.benefits {
+  background-color: $primary-bgc;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and(max-width:767px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    @extend %font-benefits;
+    text-align: center;
+    @media screen and(max-width:374px) {
+      flex-basis: 150px;
+      & + & {
+        margin-top: 20px;
+      }
+    }
+
+    @media screen and(min-width:375px) and(max-width:767px) {
+      flex-basis: calc((375px - 80px) / 2);
+      &:nth-child(2n + 1) {
+        margin-right: 10px;
+      }
+      &:nth-child(2n) {
+        margin-left: 10px;
+      }
+      &:nth-child(-n + 2) {
+        margin-bottom: 36px;
+      }
+    }
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      flex-basis: calc((768px - 60px) / 4);
+      &:not(:first-child) {
+        margin-left: 10px;
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+    @media screen and(min-width:1200px) {
+      flex-basis: calc((1200px - 120px) / 4);
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+  &__icon {
+    display: block;
+    margin: 0 auto 12px;
+
+    @media screen and(max-width:374px) {
+      width: 36px;
+      height: 36px;
+    }
+
+    @media screen and(min-width:375px) and(max-width:767px) {
+      margin-bottom: 20px;
+      width: 48px;
+      height: 48px;
+    }
+    @media screen and(min-width:768px) and(max-width:1199px) {
+      margin-bottom: 22px;
+      width: 60px;
+      height: 60px;
+    }
+    @media screen and(min-width:1200px) {
+      margin-bottom: 28px;
+      width: 75px;
+      height: 75px;
+    }
+  }
+}
