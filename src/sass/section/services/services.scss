@@ -1,0 +1,49 @@
+.services {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 25px 47px;
+    width: 302px;
+    height: 478px;
+    background-color: $primary-bgc;
+    border-radius: 20px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+  &__img {
+    width: 252px;
+    height: 166px;
+    @media screen and(min-width:1200px) {
+      width: 259px;
+      height: 344px;
+    }
+  }
+  &__container {
+  }
+  &__title {
+    text-align: center;
+  }
+  &__descr {
+    @extend %font-services;
+  }
+  &__price {
+    @extend %font-subTitle;
+    color: $primary-text-color;
+    text-align: center;
+  }
+  &__price--blue {
+    color: $second-text-color;
+  }
+}
