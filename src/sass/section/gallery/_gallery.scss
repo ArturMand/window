@@ -1,27 +1,28 @@
 .swiper {
-  @media screen and(max-width:767px) {
+  padding-bottom: 30px;
+
     width: 100%;
-  }
+
 }
-.swiper-button-prev {
-  right: -50px;
-  color: black;
-}
+
 .swiper__img {
   margin: 0 auto;
-
-  margin-bottom: 20px;
+  border-radius: 20px;
   @media screen and(max-width:767px) {
-    width: 275px;
+    width: 302px;
+    height: 310px;
+    margin-bottom: 20px;
+  }
+  @media screen and(min-width:767px) and(max-width:1199px) {
+    width: 648px;
+    height: 500px;
+    margin-bottom: 32px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 972px;
+    height: 657px;
+    margin-bottom: 40px;
   }
 }
 
-.slider {
-  display: block;
-  margin: 0 auto;
-  &__img {
-    @media screen and(max-width:767px) {
-      width: 148px;
-    }
-  }
-}
+

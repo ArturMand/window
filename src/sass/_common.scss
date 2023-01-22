@@ -19,8 +19,10 @@ img {
 }
 .container {
   margin: 0 auto;
-  padding: 0 30px;
-
+  padding: 0;
+  @media screen and (min-width: 400px) {
+    padding: 0 30px;
+  }
   @media screen and (min-width: 480px) {
     width: 480px;
   }

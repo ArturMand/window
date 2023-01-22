@@ -1,20 +1,22 @@
-// import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.min.css';
-// // import Swiper styles
-import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Pagination, Autoplay } from 'swiper';
 
 new Swiper('.swiper', {
-  modules: [Navigation, Pagination],
+  modules: [Autoplay, Pagination],
   slidesPerView: 1,
-  spaceBetween: 10,
-
+  spaceBetween: 50,
+  speed: 1000,
+  autoplay: {
+    delay: 5000,
+  },
+  loop: true,
+  lazy: {
+    loadPrevNext: true,
+  },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
     type: 'bullets',
   },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+
 });
+
