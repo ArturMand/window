@@ -19,10 +19,8 @@ img {
 }
 .container {
   margin: 0 auto;
-  padding: 0;
-  @media screen and (min-width: 400px) {
-    padding: 0 30px;
-  }
+  padding: 0 30px;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -39,6 +37,11 @@ img {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+.link {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
 }
 .title {
   @extend %font-title;
