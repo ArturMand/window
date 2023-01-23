@@ -1,7 +1,6 @@
 .about {
   &__subTitle {
     @extend %font-pimaryText;
-    // text-align: center;
     color: $primary-text-color;
     font-weight: 400;
     letter-spacing: 0;
