@@ -1,5 +1,95 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container">
-    <nav class="nav"></nav>
+    <nav class="nav">
+      <a class="nav__logoLink" href="./index.html#header">
+        <picture>
+          <source
+          media="(max-width:767px)"
+          srcset="
+            ./images/mob/header/logo@1.png  56w,
+            ./images/mob/header/logo@2.png 112w,
+            ./images/mob/header/logo@3.png 168w
+          "
+          sizes="(max-width:767px ) 56px,100vw"
+        />
+        <source
+          media="(min-width:768px )"
+          srcset="
+          ./images/desk/header/logo@1.png  76w,
+          ./images/desk/header/logo@2.png 152w,
+          ./images/desk/header/logo@3.png 228w
+        "
+        sizes="(min-width:768px ) 76px,100vw"
+
+        />
+        <img
+          class="nav__logo"
+          src="./images/desk/header/logo@1.png"
+          alt="Логотип"
+        />
+        </picture>
+      </a>
+
+      <div class="nav__wrapper" data-menu>
+          <ul class=" nav__list list">
+            <li class="nav__item"><a class="nav__link link" href="./index.html#about">О нас</a></li>
+            <li class="nav__item"><a class="nav__link link" href="./index.html#benefits">Преимущества</a></li>
+            <li class="nav__item"><a class="nav__link link" href="./index.html#services">Услуги</a></li>
+            <li class="nav__item"><a class="nav__link link" href="./index.html#gallery">Галерея</a></li>
+          </ul>
+          <a class="nav__phone link nav__phone--mob" href="tel:0971161166">
+            <svg class="nav__phone--svg" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#phone" />
+            </svg>
+            (097)116-11-66
+          </a>
+          <ul class="social list">
+            <li class="social__item social__item--desk">
+              <a
+                class="social__link link"
+                href="https://t.me/steklaremont"
+                target="_blank"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/svg/telegram.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  type="xml/svg"
+                />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link link"
+                href="https://instagram.com/stekloremont.kh?igshid=MWI4MTIyMDE="
+                target="_blank"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/svg/instagram.svg"
+                  alt=""
+                  width="40"
+                  height="40"
+                  type="xml/svg"
+                />
+              </a>
+            </li>
+          </ul>
+          <a class="nav__phone link nav__phone--desk" href="tel:0971161166">
+            <svg class="nav__phone--svg" width="24" height="24">
+              <use href="./images/svg/symbol-defs.svg#phone" />
+            </svg>
+            (097)116-11-66
+          </a>
+    </div>
+    </nav>
+    <button class="btn btn__menu" type="button" data-menu-button>
+      <svg width="22" height="22" >
+        <use class="burger" href='./images/svg/symbol-defs.svg#burger'/>
+        <use class="cross" href='./images/svg/symbol-defs.svg#cross'/>
+      </svg>
+    </button>
   </div>
 </header>
