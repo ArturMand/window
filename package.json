@@ -2,7 +2,7 @@
   "name": "window",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://arturmand.github.io/window/",
+  "homepage": "https://arturmand.github.io/window",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /window/"
