@@ -2,7 +2,7 @@
   <div class="container">
     <h2 class="footer__title">Наши контакты</h2>
     <div class="footer__wrapper">
-      <a href="" class="footer__logoLink link">
+      <a href="./index.html" class="footer__logoLink--desk link">
         <picture>
           <source
             media="(min-width:768px) and (max-width:1199px)"
@@ -36,44 +36,43 @@
             href="https://goo.gl/maps/t1ZJ5mSwTM3cmxrp9"
             target="_blank"
           >
-            <svg class="footer__contactSvg footer__contactSvg--first">
+            <img
+              class="footer__contactSvg footer__contactSvg--first"
+              src="./images/desk/footer/mark.png"
+              alt="mark"
+            />
+            <!-- <svg class="footer__contactSvg footer__contactSvg--first">
               <use href="./images/svg/symbol-defs.svg#mark" />
-            </svg>
+            </svg> -->
             Украина, г. Харьков, Елизаветинская, 3
           </a>
         </li>
         <li class="footer__contactItem">
           <a class="footer__contactLink link" href="tel:0971161166">
-            <svg class="footer__contactSvg footer__contactSvg--second">
+            <img
+              class="footer__contactSvg footer__contactSvg--second"
+              src="./images/desk/footer/tel.png"
+              alt="tel"
+            />
+            <!-- <svg class="footer__contactSvg footer__contactSvg--second">
               <use href="./images/svg/symbol-defs.svg#tel" />
-            </svg>
+            </svg> -->
             (097) 116-11-66
           </a>
         </li>
         <li class="footer__contactItem">
-          <svg class="footer__contactSvg footer__contactSvg--third">
+          <img
+            class="footer__contactSvg footer__contactSvg--third"
+            src="./images/desk/footer/mark.png"
+            alt="worktime"
+          />
+          <!-- <svg class="footer__contactSvg footer__contactSvg--third">
             <use href="./images/svg/symbol-defs.svg#workTime" />
-          </svg>
+          </svg> -->
           Пн. - Пт.: 8:00 - 18:00 Сб. - Вс.: 8:00 - 15:00
         </li>
       </ul>
       <ul class="contact list">
-        <li class="contact__item">
-          <a
-            class="contact__link link"
-            href="https://t.me/steklaremont"
-            target="_blank"
-          >
-            <img
-              class="contact__icon"
-              src="./images/svg/telegram.svg"
-              alt=""
-              width="32"
-              height="32"
-              type="xml/svg"
-            />
-          </a>
-        </li>
         <li class="contact__item">
           <a
             class="contact__link link"
@@ -90,7 +89,50 @@
             />
           </a>
         </li>
+        <li class="contact__item">
+          <a
+            class="contact__link link"
+            href="https://t.me/steklaremont"
+            target="_blank"
+          >
+            <img
+              class="contact__icon"
+              src="./images/svg/telegram.svg"
+              alt=""
+              width="32"
+              height="32"
+              type="xml/svg"
+            />
+          </a>
+        </li>
       </ul>
+      <a href="./index.html" class="footer__logoLink--mob link">
+        <picture>
+          <source
+            media="(min-width:768px) and (max-width:1199px)"
+            srcset="
+              ./images/tab/footer/logo@1.png 135w,
+              ./images/tab/footer/logo@2.png 270w,
+              ./images/tab/footer/logo@3.png 405w
+            "
+            sizes="(min-width:1200px ) 76px,100vw"
+          />
+          <source
+            media="(min-width:1200px )"
+            srcset="
+              ./images/desk/footer/logo@1.png 191w,
+              ./images/desk/footer/logo@2.png 382w,
+              ./images/desk/footer/logo@3.png 573w
+            "
+            sizes="(min-width:1200px ) 129px,100vw"
+          />
+          <img
+            class="footer__logo"
+            src="./images/desk/footer/logo@1.png"
+            alt="Логотип"
+          />
+        </picture>
+      </a>
     </div>
   </div>
 </footer>

@@ -10,13 +10,25 @@
   }
   &__wrapper {
     display: flex;
-    justify-content: center;
     align-items: center;
     @media screen and(max-width:767px) {
       flex-direction: column;
     }
+    @media screen and(min-width:768px) {
+      justify-content: space-between;
+    }
   }
   &__logoLink {
+    &--desk {
+      @media screen and(max-width:767px) {
+        display: none;
+      }
+    }
+    &--mob {
+      @media screen and(min-width:768px) {
+        display: none;
+      }
+    }
   }
 
   &__logo {
@@ -31,15 +43,29 @@
       height: 191px;
     }
   }
-  &__contactsList {
-  }
 
   &__contactItem {
     @extend %font-benefits;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    width: 200px;
+    @media screen and(min-width:768px) {
+      width: 300px;
+    }
+    & + & {
+      margin-top: 25px;
+    }
+    @media screen and(min-width:1200px) {
+      & + & {
+        margin-top: 28px;
+      }
+    }
   }
   &__contactLink {
-    width: 246px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    color: black;
   }
   &__contactSvg {
     &--first {
@@ -73,7 +99,7 @@
       }
     }
     &--third {
-      display: block;
+      display: inline-block;
       width: 24px;
       height: 24px;
       margin-right: 24px;
@@ -95,12 +121,7 @@
   display: inline-flex;
   @media screen and(max-width:767px) {
     margin-top: 20px;
-  }
-  @media screen and(min-width:768px) and(max-width:1199px) {
-    margin-left: 75px;
-  }
-  @media screen and(min-width:1200px) {
-    margin-left: 108px;
+    margin-bottom: 20px;
   }
   &__item {
     @media screen and(max-width:767px) {
@@ -121,7 +142,15 @@
   }
 
   &__icon {
-    widows: 32px;
+    width: 32px;
     height: 32px;
+    @media screen and(min-width:768px) {
+      width: 40px;
+      height: 40px;
+    }
+    @media screen and(min-width:768px) {
+      width: 52px;
+      height: 52px;
+    }
   }
 }
